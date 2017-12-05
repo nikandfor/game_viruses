@@ -33,3 +33,7 @@ clean:
 	rm -rf $(TEST_BIN) $(RUN_BIN) $(OBJDIR)/*
 
 .PHONY: clean
+
+run: $(RUN_BIN)
+	@$<
+	
